@@ -15,7 +15,7 @@ function SingleWorkout(){
     const fetchWorkout = async() =>{
       
       try{
-        const response = await fetch("/workouts/" + workout_id,{
+        const response = await fetch("https://mern-backend-ohuj.onrender.com/workouts/" + workout_id,{
           headers:{
             'Authorization':`Bearer ${user.token}`
           }
