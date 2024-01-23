@@ -10,7 +10,7 @@ export const useLogin = ()=>{
         setError(null);
         setIsLoading(true);
 
-        const response = await fetch('/user/login',{
+        const response = await fetch('https://mern-backend-ohuj.onrender.com/user/login',{
             method:"POST",
             body:JSON.stringify({email,password}),
             headers:{"Content-Type":"Application/json"}
