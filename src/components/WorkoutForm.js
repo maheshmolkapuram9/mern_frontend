@@ -18,7 +18,7 @@ const WorkoutForm = () =>{
     const handleSubmit = async(e) =>{
         e.preventDefault();
         const workout = {title,reps,load};
-        const response = await fetch('/workouts',{
+        const response = await fetch('https://mern-backend-ohuj.onrender.com/workouts',{
             method:"POST",
             body:JSON.stringify(workout),
             headers:{
