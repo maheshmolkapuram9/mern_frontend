@@ -18,7 +18,7 @@ export const UpdateWorkout = ({wTitle,wLoad,wReps,wId,handleFormVisibility}) =>{
     const handleSubmit = async(e) =>{
         e.preventDefault();
         const workout = {title,reps,load};
-        const response = await fetch('/workouts/' + wId,{
+        const response = await fetch('https://mern-backend-ohuj.onrender.com/workouts/' + wId,{
             method:"PATCH",
             body:JSON.stringify(workout),
             headers:{
