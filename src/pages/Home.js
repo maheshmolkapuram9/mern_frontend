@@ -13,7 +13,7 @@ function Home(){
     const fetchWorkouts = async() =>{
       
       try{
-        const response = await fetch('/workouts',{
+        const response = await fetch('https://mern-backend-ohuj.onrender.com/workouts',{
           headers:{
             'Authorization':`Bearer ${user.token}`
           }
