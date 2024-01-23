@@ -14,7 +14,7 @@ const WorkoutDetails = ({workout}) =>{
     }
 
     const handleDelete = async()=>{
-        const response = await fetch("/workouts/" + workout._id, {
+        const response = await fetch("https://mern-backend-ohuj.onrender.com/workouts/" + workout._id, {
             method:"DELETE",
             headers:{
                 'Authorization':`Bearer ${user.token}`
